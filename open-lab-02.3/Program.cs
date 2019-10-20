@@ -4,15 +4,17 @@ namespace open_lab_02._3
 {
     class Program
     {
+        public static int Sum(int a, int b)
+
+        {
+            return (a % b);
+
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Write two numbers.");
-            string number1 = Console.ReadLine();
-            string number2 = Console.ReadLine();
-            int a = Convert.ToInt32(number1);
-            int b = Convert.ToInt32(number2);
-            int c = a % b;
-            Console.WriteLine(c);
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Sum(number1, number2));
 
         }
     }
